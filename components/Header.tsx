@@ -65,11 +65,16 @@ export default function Header({ locale, dict }: HeaderProps) {
     >
       {/* ---------- Top utility bar ---------- */}
       <div className="bg-navy-950 text-navy-200 text-xs">
-        <div className="container flex h-9 items-center justify-between">
-          <div className="flex items-center gap-4">
+        {/* Mobile: phone + WhatsApp only, centered. md+: contacts start / announcement end. */}
+        <div className="container flex h-9 items-center justify-center gap-4 md:justify-between">
+          <div className="flex shrink-0 items-center gap-4">
             <span className="flex items-center gap-2">
-              <Phone className="h-3.5 w-3.5 text-gold-400" aria-hidden />
-              <a href={CONTACT.phones[1].tel} className="hover:text-white transition-colors" dir="ltr">
+              <Phone className="h-3.5 w-3.5 shrink-0 text-gold-400" aria-hidden />
+              <a
+                href={CONTACT.phones[1].tel}
+                className="whitespace-nowrap hover:text-white transition-colors"
+                dir="ltr"
+              >
                 {CONTACT.phones[1].display}
               </a>
             </span>
@@ -77,15 +82,17 @@ export default function Header({ locale, dict }: HeaderProps) {
               href={CONTACT.phones[1].whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex items-center gap-1.5 hover:text-white transition-colors"
+              className="flex items-center gap-1.5 whitespace-nowrap hover:text-white transition-colors"
             >
-              <MessageCircle className="h-3.5 w-3.5 text-gold-400" aria-hidden />
+              <MessageCircle className="h-3.5 w-3.5 shrink-0 text-gold-400" aria-hidden />
               WhatsApp
             </a>
           </div>
-          <div className="flex items-center gap-2">
-            <Sparkles className="h-3.5 w-3.5 text-gold-400" aria-hidden />
-            <span>{dict.brand.tagline}</span>
+
+          {/* Announcement — hidden on mobile to prevent overlap */}
+          <div className="hidden min-w-0 items-center gap-2 md:flex">
+            <Sparkles className="h-3.5 w-3.5 shrink-0 text-gold-400" aria-hidden />
+            <span className="truncate">{dict.brand.tagline}</span>
           </div>
         </div>
       </div>
