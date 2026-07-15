@@ -368,6 +368,36 @@ const en = {
     },
   },
 
+  consultationPage: {
+    badge: "Free Consultation",
+    heading: "Book Your Professional Consultation",
+    subheading:
+      "Thirty minutes with a senior TurkeyBridge advisor — honest answers, a clear next step, and zero obligation. Available in Persian, Turkish, and English.",
+    formTitle: "Tell us about your goal",
+    formSubtitle: "Fill in the form and our advisory desk will confirm your session within one business day.",
+    phoneHint: "Include your country code — e.g., +90 5xx xxx xx xx",
+    serviceOptions: [
+      { key: "company", label: "Company & Business Registration" },
+      { key: "business", label: "Business & Management Consulting" },
+      { key: "residency", label: "Residency & Immigration" },
+      { key: "investment", label: "Investment & Financial Planning" },
+      { key: "trade", label: "Trade Services (Import/Export)" },
+      { key: "academy", label: "TurkeyBridge Academy (Courses)" },
+      { key: "other", label: "Other / Not sure yet" },
+    ],
+    submit: "Request My Consultation",
+    successTitle: "Thank you! Your request is in.",
+    successDesc: "Our advisors will reach out via WhatsApp or email shortly to confirm your consultation time.",
+    benefitsTitle: "What you can expect",
+    benefits: [
+      "Free first assessment — honest advice, no obligation",
+      "Senior advisors in Persian, Turkish, and English",
+      "A written next-step summary after your session",
+    ],
+    altTitle: "Prefer instant contact?",
+    altDesc: "Message us directly — we answer on WhatsApp and Instagram every day.",
+  },
+
   servicePage: {
     breadcrumb: "Services",
     indexTitle: "Consulting services, end to end",
@@ -808,6 +838,36 @@ const tr: Dictionary = {
     },
   },
 
+  consultationPage: {
+    badge: "Ücretsiz Danışmanlık",
+    heading: "Profesyonel Danışmanlığınızı Planlayın",
+    subheading:
+      "Kıdemli bir TurkeyBridge danışmanıyla 30 dakika — dürüst yanıtlar, net bir sonraki adım ve sıfır yükümlülük. Farsça, Türkçe ve İngilizce olarak.",
+    formTitle: "Bize hedefinizden bahsedin",
+    formSubtitle: "Formu doldurun; danışma masamız randevunuzu bir iş günü içinde onaylasın.",
+    phoneHint: "Ülke kodunu ekleyin — örn. +90 5xx xxx xx xx",
+    serviceOptions: [
+      { key: "company", label: "Şirket Kuruluşu ve Ticari Kayıt" },
+      { key: "business", label: "İş ve Yönetim Danışmanlığı" },
+      { key: "residency", label: "Oturma İzni ve Göçmenlik" },
+      { key: "investment", label: "Yatırım ve Finansal Planlama" },
+      { key: "trade", label: "Ticari Hizmetler (İthalat/İhracat)" },
+      { key: "academy", label: "TurkeyBridge Akademi (Kurslar)" },
+      { key: "other", label: "Diğer / Henüz emin değilim" },
+    ],
+    submit: "Danışmanlık Talep Et",
+    successTitle: "Teşekkürler! Talebiniz alındı.",
+    successDesc: "Danışmanlarımız randevu saatinizi onaylamak için kısa süre içinde WhatsApp veya e-posta ile ulaşacak.",
+    benefitsTitle: "Sizi neler bekliyor?",
+    benefits: [
+      "Ücretsiz ilk değerlendirme — dürüst tavsiye, yükümlülük yok",
+      "Farsça, Türkçe ve İngilizce kıdemli danışmanlar",
+      "Görüşme sonrası yazılı bir sonraki adım özeti",
+    ],
+    altTitle: "Anında iletişim mi tercih edersiniz?",
+    altDesc: "Bize doğrudan yazın — WhatsApp ve Instagram'da her gün yanıtlıyoruz.",
+  },
+
   servicePage: {
     breadcrumb: "Hizmetler",
     indexTitle: "Uçtan uca danışmanlık hizmetleri",
@@ -1244,6 +1304,36 @@ const fa: Dictionary = {
       cargoPlaceholder: "مثلاً ماشین‌آلات صنعتی، مواد غذایی، منسوجات…",
       submit: "ارسال استعلام",
     },
+  },
+
+  consultationPage: {
+    badge: "مشاوره رایگان",
+    heading: "شروع مسیر موفقیت در ترکیه",
+    subheading:
+      "۳۰ دقیقه با یک مشاور ارشد TurkeyBridge — پاسخ‌های صادقانه، قدم بعدی روشن و بدون هیچ تعهدی. به زبان‌های فارسی، ترکی و انگلیسی.",
+    formTitle: "از هدف‌تان برایمان بگویید",
+    formSubtitle: "فرم را پر کنید تا میز مشاوره ما ظرف یک روز کاری جلسه شما را تأیید کند.",
+    phoneHint: "کد کشور را وارد کنید — مثلاً +90 5xx xxx xx xx",
+    serviceOptions: [
+      { key: "company", label: "ثبت شرکت و امور تجاری" },
+      { key: "business", label: "مشاوره کسب‌وکار و مدیریت" },
+      { key: "residency", label: "اقامت و مهاجرت" },
+      { key: "investment", label: "سرمایه‌گذاری و برنامه‌ریزی مالی" },
+      { key: "trade", label: "خدمات بازرگانی (واردات/صادرات)" },
+      { key: "academy", label: "آکادمی TurkeyBridge (دوره‌ها)" },
+      { key: "other", label: "سایر / هنوز مطمئن نیستم" },
+    ],
+    submit: "درخواست مشاوره",
+    successTitle: "سپاسگزاریم! درخواست شما ثبت شد.",
+    successDesc: "مشاوران ما به‌زودی از طریق واتس‌اپ یا ایمیل برای تأیید زمان مشاوره با شما تماس می‌گیرند.",
+    benefitsTitle: "چه چیزی در انتظار شماست؟",
+    benefits: [
+      "ارزیابی اولیه رایگان — مشاوره صادقانه، بدون تعهد",
+      "مشاوران ارشد به فارسی، ترکی و انگلیسی",
+      "خلاصه مکتوب قدم‌های بعدی پس از جلسه",
+    ],
+    altTitle: "ارتباط فوری را ترجیح می‌دهید؟",
+    altDesc: "مستقیم پیام دهید — هر روز در واتس‌اپ و اینستاگرام پاسخگو هستیم.",
   },
 
   servicePage: {
