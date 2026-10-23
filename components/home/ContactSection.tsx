@@ -53,7 +53,7 @@ export default function ContactSection({ locale, dict }: { locale: Locale; dict:
                     </a>
                     <span className="flex items-center gap-1.5">
                       <a
-                        href={p.whatsapp}
+                        href={p?.whatsapp}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`${c.whatsapp} — ${p.display}`}
