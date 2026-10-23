@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="TurkeyBridge TB icon">
+  <rect width="512" height="512" rx="92" fill="#0d1b2a"/>
+  <rect x="18" y="18" width="476" height="476" rx="74" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <text x="256" y="296" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="230" font-weight="700" fill="#d7a72c">TB</text>
+</svg>
