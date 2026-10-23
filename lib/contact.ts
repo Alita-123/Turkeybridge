@@ -26,6 +26,12 @@ export const CONTACT = {
   ] as InstagramEntry[],
   phones: [
     {
+      display: "+90 (553) 940-4699",
+      tel: "tel:+905539404699",
+      whatsapp: "https://wa.me/905539404699",
+      telegram: "https://t.me/+905539404699",
+    },
+    {
       display: "+90 (507) 840-9306",
       tel: "tel:+905078409306",
       whatsapp: "https://wa.me/905078409306",
