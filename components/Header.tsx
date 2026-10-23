@@ -23,6 +23,7 @@ export default function Header({ locale, dict }: HeaderProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileSection, setMobileSection] = useState<MenuKey>(null);
   const [scrolled, setScrolled] = useState(false);
+  const primaryPhone = CONTACT.phones[0];
 
   const L = (href: string) => `/${locale}${href}`;
 
@@ -67,27 +68,29 @@ export default function Header({ locale, dict }: HeaderProps) {
       <div className="bg-navy-950 text-navy-200 text-xs">
         {/* Mobile: phone + WhatsApp only, centered. md+: contacts start / announcement end. */}
         <div className="container flex h-9 items-center justify-center gap-4 md:justify-between">
-          <div className="flex shrink-0 items-center gap-4">
-            <span className="flex items-center gap-2">
-              <Phone className="h-3.5 w-3.5 shrink-0 text-gold-400" aria-hidden />
+          {primaryPhone ? (
+            <div className="flex shrink-0 items-center gap-4">
+              <span className="flex items-center gap-2">
+                <Phone className="h-3.5 w-3.5 shrink-0 text-gold-400" aria-hidden />
+                <a
+                  href={primaryPhone.tel}
+                  className="whitespace-nowrap hover:text-white transition-colors"
+                  dir="ltr"
+                >
+                  {primaryPhone.display}
+                </a>
+              </span>
               <a
-                href={CONTACT.phones[1].tel}
-                className="whitespace-nowrap hover:text-white transition-colors"
-                dir="ltr"
+                href={primaryPhone.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 whitespace-nowrap hover:text-white transition-colors"
               >
-                {CONTACT.phones[1].display}
+                <MessageCircle className="h-3.5 w-3.5 shrink-0 text-gold-400" aria-hidden />
+                WhatsApp
               </a>
-            </span>
-            <a
-              href={CONTACT.phones[1].whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 whitespace-nowrap hover:text-white transition-colors"
-            >
-              <MessageCircle className="h-3.5 w-3.5 shrink-0 text-gold-400" aria-hidden />
-              WhatsApp
-            </a>
-          </div>
+            </div>
+          ) : null}
 
           {/* Announcement — hidden on mobile to prevent overlap */}
           <div className="hidden min-w-0 items-center gap-2 md:flex">
@@ -243,7 +246,7 @@ export default function Header({ locale, dict }: HeaderProps) {
               <Link
                 href={L("/services")}
                 onClick={closeAll}
-                className="group flex items-center justify-center gap-2 rounded-xl border-2 border-dashed border-slate-200 p-4 font-semibold text-navy-700 transition-colors hover:border-gold-400 hover:text-navy-950"
+                className="group flex items-center justify-center gap-2 rounded-xl border-2 border-dashed border-slate-200 p-4 font-semibold text-navy-700 transition-colors hover:border-gold-400 hover:text-navy-900"
               >
                 {dict.nav.allServices}
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" aria-hidden />
